@@ -1,6 +1,8 @@
 pipeline {
         agent any
-
+        environment {
+                PASSWORD = credentials('registry-password')
+        }
         stages {
                 stage('Build') {
                         steps {
