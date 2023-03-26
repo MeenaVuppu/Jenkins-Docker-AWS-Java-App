@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  app:
+    image: "practice:$BUILD_TAG" 
+    build:
+      context: .
+      dockerfile: Dockerfile-Java
+    
+
