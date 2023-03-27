@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo pratice > /tmp/.auth
+echo practice > /tmp/.auth
 echo $BUILD_TAG >> /tmp/.auth
 echo $PASSWORD >> /tmp/.auth
 

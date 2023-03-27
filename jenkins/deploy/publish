@@ -4,5 +4,7 @@ export IMAGE=$(sed -n '1p' /tmp/.auth)
 export TAG=$(sed -n '2p' /tmp/.auth)
 export PASSWORD=$(sed -n '3p' /tmp/.auth)
 
+echo $IMAGE 
+
 docker login -u meenavuppu -p $PASSWORD
 cd ~/maven && docker-compose up -d
