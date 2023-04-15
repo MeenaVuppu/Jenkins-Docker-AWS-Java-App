@@ -2,11 +2,6 @@ FROM jenkins/jenkins
 
 USER root
 
-# Install ansible
-
-RUN apt-get update && apt-get install python3-pip -y && \
-    pip3 install ansible --upgrade
-
 # Install Docker
 
 RUN apt-get update && \
